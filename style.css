@@ -1,47 +1,79 @@
 body {
-    font-family: Arial;
-    margin: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
 nav {
     background: #333;
-    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
     color: white;
-    margin: 10px;
     text-decoration: none;
 }
 
-nav a:hover {
-    color: yellow;
+.container {
+    padding: 20px;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     width: 300px;
 }
 
-input {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
-    width: 100%;
+form input {
+    margin: 8px 0;
+    padding: 10px;
 }
 
 button {
-    padding: 8px;
-    background: blue;
+    padding: 10px;
+    background: #28a745;
     color: white;
     border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
 }
 
 table {
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
+    background: white;
 }
 
-th, td {
-    border: 1px solid black;
+table th, table td {
     padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.actions button {
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.delete {
+    background: red;
+}
+
+.edit {
+    background: orange;
+}
+
+.details {
+    background: blue;
 }
